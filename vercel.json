@@ -3,13 +3,4 @@
   "builds": [
         {"src": "main.py", "use": "@vercel/python"}
     ],
-  "functions": {
-    "**/*.py": {
-      "maxDuration": 60,
-      "memory": 1024
-    }
-  },
-  "routes": [
-    { "src": "/(.*)", "dest": "/main.py" }
-  ]
 }
