@@ -1,8 +1,12 @@
 {
-    "functions": {
-    "./main.py": {
-      "memory": 1024,
-      "maxDuration": 100
+  "version": 2,
+  "functions": {
+    "**/*.py": {
+      "maxDuration": 60,
+      "memory": 1024
     }
-  }
+  },
+  "routes": [
+    { "src": "/(.*)", "dest": "/main.py" }
+  ]
 }
