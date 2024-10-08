@@ -1,0 +1,7 @@
+flask
+pillow
+requests
+openai
+reportlab
+fal-client
+python-dotenv
