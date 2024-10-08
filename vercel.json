@@ -1,5 +1,8 @@
 {
   "version": 2,
+  "builds": [
+        {"src": "main.py", "use": "@vercel/python"}
+    ],
   "functions": {
     "**/*.py": {
       "maxDuration": 60,
